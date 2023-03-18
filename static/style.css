@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+#logo img{
+    height: 80px;
+}
+
+#navbar{
+    background-color: green;
+    padding: 13px 14px;
+    font-family: 'Sono', sans-serif;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    padding: 13px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar li a:hover{
+    color: white;
+}
+
+#introSection{
+    padding-bottom: 90px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat url("/static/bg1.jpg");
+    height: 400px;
+    font-size: 35px;
+    background-color: red;
+    font-family: 'Sono', sans-serif;
+}
+
+#introSection div.small{
+    font-size: 27px;
+}
+
+#missionSection{
+    height: 290px;
+    background-color: white;
+    margin: auto;
+}
+
+#missionSection h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 13px;
+    font-family: 'Sono', sans-serif;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin: 14px 23px;
+    height: 171px;
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img{
+    height: 80px;
+    padding: 5px 9px;
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.card-content{
+    font-size: 19px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+#sponsorsSection{
+    height: 300px;
+    /* background-color: rgb(246, 222, 222); */
+}
+
+#sponsorsSection::before{
+    content: "";
+    position: absolute;
+    background: url('/static/bg2.jpg');
+    width: 100%;
+    height: 345px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#sponsorsSection h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 13px;
+    font-family: 'Sono', sans-serif;
+}
+
+#sponsors{
+    height: 100px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.spImage{
+    height: 90%;
+    margin: 20px;
+}
+
+#footer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 40px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}

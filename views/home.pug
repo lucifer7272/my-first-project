@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+  block style 
+      style 
+        include ../static/style.css 
+
+block content 
+    
+    section#introSection 
+        div Welcome to Sahil's Dance Acedemy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img
+                    img(src="/static/h1.png")
+            div.card-content 
+                    p This is a best dance academy of the world
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img
+                    img(src="/static/logo.png")
+            div.card-content 
+                    p This is a best dance academy of the world
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img
+                    img(src="/static/h2.png")
+            div.card-content 
+                    p This is a best dance academy of the world
+
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/s1.jpg", alt="Sponsr Image", Class="spImage")
+            img(src="/static/s2.png", alt="Sponsr Image", Class="spImage")
+            img(src="/static/s3.jpg", alt="Sponsr Image", Class="spImage")
+            img(src="/static/s4.png", alt="Sponsr Image", Class="spImage")
